@@ -7,6 +7,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Figtree", sans-serif;
+    height: 100vh;
 }
 
 
@@ -18,13 +19,16 @@ body {
   font-style: normal;
 }
 
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
 .container {
     max-width: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     margin: 0 auto;
     background-color: #fff;
     padding: 20px;
@@ -35,13 +39,17 @@ body {
     overflow: hidden;
 }
 
-.image {
+figure {
+    display: block;
     width: 100%;
+    margin: 0 auto;
 }
 
-.image img{
-    width: 100%;
+
+figure > img {
     border-radius: 10px;
+    width: 100%;
+    height: auto;
 }
 
 span {
@@ -58,7 +66,7 @@ p {
 }
 
 .date {
-    margin: 10px 0 0 0;
+    margin-top: 10px;
     color: #000;
 }
 
@@ -72,7 +80,6 @@ h1 {
 
 .author {
     display: flex;
-    width: 100%;
     align-items: center;
     font-weight: bold;
 }
@@ -81,5 +88,3 @@ h1 {
     margin-right: 10px;
     height: 5.5vh;
 }
-
-
